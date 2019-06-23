@@ -1,0 +1,61 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.demo {
+    position: relative;
+}
+.card {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    height: auto;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+.scroll-box-item {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 8px;
+}
+h1 {
+    padding: 15px  20px;
+    margin: 0;
+    font-size: 1.3em;
+    border-bottom: 1px solid rgba(32, 33, 36, 0.28);
+}
+h2 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    height: calc(1.2em + 15px);
+
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+span {
+    padding: 10px 15px;
+    display: block;
+    font-size: 1.1em;
+}
+@media only screen and (min-width: 1025px) {
+    .demo {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .scroll-box-container {
+
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
