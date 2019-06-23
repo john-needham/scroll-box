@@ -2,31 +2,61 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 12px;
+    background-color: #B5EAD7;
 }
 * {
     font-family: 'Roboto', sans-serif;
 }
+pre {
+    font-family: 'Source Code Pro', monospace;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #E0FEFE;
+}
+.blurb {
+    padding: 15px;
+    font-size: 1.2em;
+}
+h1 {
+    background-color: #C7CEEA;
+    max-width: 600px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    font-size: 1.4em;
+}
+.blurb p {
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+.blurb p:last-child {
+    padding: 0;
+}
 .demo {
     position: relative;
+    margin: 20px 0;
 }
-.card {
+.demo .card {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     height: auto;
     margin: 10px;
     background: #fff;
     border-radius: 8px;
 }
-.scroll-box-item {
+.demo .scroll-box-item {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     border-radius: 8px;
 }
-h1 {
+.demo h1 {
+    border-radius: 8px 8px 0 0;
+    background-color: #fff;
     padding: 15px  20px;
     margin: 0;
     font-size: 1.3em;
     border-bottom: 1px solid rgba(32, 33, 36, 0.28);
 }
-h2 {
+.demo h2 {
     padding: 15px;
     margin: 0;
     font-size: 1.2em;
@@ -34,12 +64,12 @@ h2 {
     height: calc(1.2em + 15px);
 
 }
-img {
+.demo img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-span {
+.demo span {
     padding: 10px 15px;
     display: block;
     font-size: 1.1em;
@@ -47,10 +77,9 @@ span {
 @media only screen and (min-width: 1025px) {
     .demo {
         width: 340px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
-    .scroll-box-container {
-
+    .demo .scroll-box-container {
         width: 100%;
         position: relative;
         left: 0;

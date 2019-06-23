@@ -1,0 +1,78 @@
+/**
+ * Contain our content within the screen boundaries.
+ */
+.scroll-box-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+/**
+ * If we can, hide the scroll bar
+ */
+.scroll-box-container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+/**
+ * The content box, expands to fit our content beyond the screen size.
+ */
+.scroll-box-scroll {
+    /**
+     * Using flex for horizontal flow.
+     */
+    display: flex;
+    padding: 15px 25px;
+    /**
+     * This calc is not needed if we know how many elements we have, but is included
+     * here to explain the sizes.
+     *
+     * We have a desired item width of 70vw, but max of 230px, this attempts to ensure
+     * that we show some of the second box so the user sees that they can scroll.
+     *
+     * Three is the number of items we have.
+     *
+     * Spacing of each item (-1) is added to the width to prevent wrapping to next line.
+     * We subtract one as we remove the margin on the last item.
+     */
+    width: calc((70vw * 3) + (15px * 2));
+    /**
+     * Calculate for max sizing also, same algorithm as above.
+     */
+    max-width: calc((230px * 3) + (15px * 2));
+}
+/**
+ * Each item we want to have in our scroll box.
+ */
+.scroll-box-item {
+    /**
+     * Using flex for horizontal flow.
+     */
+    display: flex;
+    /**
+     * Background required to hide parent card styling when overflowing off screen.
+     */
+    background: #fff;
+    /**
+     * Width and max-width must match those used the scroll calc(..), we want to be
+     * narrower than the screen to show a user that thy can scroll horizontally.
+     */
+    width: 70vw;
+    max-width: 230px;
+    height: 280px;
+    /**
+     * margin must match those used the scroll calc(..).
+     */
+    margin-right: 15px;
+}
+.scroll-box-item:last-child {
+    /**
+     * Remove last margin otherwise we get double spacing as .scroll-box-scroll has padding.
+     */
+    margin-right: 0;
+}

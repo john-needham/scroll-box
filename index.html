@@ -2,48 +2,87 @@
     <head>
         <title>Scroll box demo</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="docs/base.css?v=2">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Code+Pro&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="scroll-box.css?v=2">
         <link type="text/css" rel="stylesheet" href="demo.css?v=2">
     </head>
     <body>
-    <div class="demo">
-        <div class="card">
+        <div class="container">
             <h1>
-                Demo Scroll Box
+                Scroll box cards in css.
             </h1>
-            <div class="scroll-box-container">
-                <div class="scroll-box-scroll">
-                    <div class="scroll-box-item">
-                        <div class="demo-item">
-                            <h2>Aenean tellus metus bibendum</h2>
-                            <img src="https://placekitten.com/300/201">
-                            <span>
-                                Phasellus nec sem in justo, in hac habitasse platea dictumst.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="scroll-box-item">
-                        <div class="demo-item">
-                            <h2>Proin faucibus arcu quis</h2>
-                            <img src="https://placekitten.com/300/202">
-                            <span>
-                                Nunc interdum lacus sit, quisque ut nisi.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="scroll-box-item">
-                        <div class="demo-item">
-                            <h2>Etiam feugiat lorem non</h2>
-                            <img src="https://placekitten.com/300/203">
-                            <span>
-                                Nam pretium turpis et arcu, suspendisse pulvinar augue ac.
-                            </span>
+            <div class="blurb">
+                <p>
+                    A super simple demo of a mobile scroll box, similar in style to the google news ui on mobile devices.
+                </p>
+                <p>
+                    To see it working best, view on a mobile device.
+                </p>
+            </div>
+            <h1>
+                Demo:
+            </h1>
+            <div class="demo">
+                <div class="card">
+                    <h1>
+                        Pellentesque commodo eros a
+                    </h1>
+                    <div class="scroll-box-container">
+                        <div class="scroll-box-scroll">
+                            <div class="scroll-box-item">
+                                <div class="demo-item">
+                                    <h2>Aenean tellus metus bibendum</h2>
+                                    <img src="https://placekitten.com/300/201">
+                                    <span>
+                                        Phasellus nec sem in justo, in hac habitasse platea dictumst.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="scroll-box-item">
+                                <div class="demo-item">
+                                    <h2>Proin faucibus arcu quis</h2>
+                                    <img src="https://placekitten.com/300/202">
+                                    <span>
+                                        Nunc interdum lacus sit, quisque ut nisi.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="scroll-box-item">
+                                <div class="demo-item">
+                                    <h2>Etiam feugiat lorem non</h2>
+                                    <img src="https://placekitten.com/300/203">
+                                    <span>
+                                        Nam pretium turpis et arcu, suspendisse pulvinar augue ac.
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <h1>
+                Code:
+            </h1>
+            <div class="blurb">
+                <p>
+                    The css can be found in <a href="scroll-box.css">scroll-box.css</a>, with a break down of what the main parts are.
+                </p>
+                <p>
+                    The HTML is made of three main elements, container, scroll box and items:
+                </p>
+                <pre>
+    &lt;div class=&quot;scroll-box-container&quot;&gt;
+        &lt;div class=&quot;scroll-box-scroll&quot;&gt;
+            &lt;div class=&quot;scroll-box-item&quot;&gt;
+                ...
+            &lt;/div&gt;
+            &lt;div class=&quot;scroll-box-item&quot;&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </pre>
+            </div>
         </div>
-    </div>
     </body>
 </html>
